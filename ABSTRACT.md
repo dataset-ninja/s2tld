@@ -2,7 +2,7 @@ The **S2TLD: Small Traffic Light Dataset** is the authors newly collected and an
 
 ## Motivation
 
-Small and cluttered objects are common in real-world which are challenging for detection. The difficulty is further pronounced when the objects are rotated, as traditional detectors often routinely locate the objects in horizontal bounding box such that the region of interest is contaminated with background or nearby interleaved objects.
+Reliable traffic light detection and classification is crucial for automated driving in urban environments. Currently, there are no systems that can reliably perceive traffic lights in real-time, without map-based information, and in sufficient distances needed for smooth urban driving.
 
 ## Dataset description
 
