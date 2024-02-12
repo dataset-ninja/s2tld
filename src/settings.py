@@ -13,37 +13,43 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "S2TLD"
+PROJECT_NAME_FULL: str = "S2TLD: Small Traffic Light Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.MIT()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Industry.Utilities(),
+    Industry.Automotive(),
+]
+CATEGORY: Category = Category.EnergyAndUtilities(extra=Category.SelfDriving())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = None
+    RELEASE_YEAR: int = 2022
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://github.com/Thinklab-SJTU/S2TLD"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 13744454
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/s2tld"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = {
+    "S2TLD (1,080 * 1,920)": "https://1drv.ms/u/s!Akhz5L4oxpUGiX2BR8RRl4B-XJ4I?e=fFFkll",
+    "S2TLD (720 * 1,280)": "https://1drv.ms/u/s!Akhz5L4oxpUGigJuXsgf-hyoknPp?e=TjchFL",
+}
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,19 +57,38 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
+    "https://ieeexplore.ieee.org/abstract/document/9756223"
+)
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"some_link_to_repo_if_exists"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
-AUTHORS_CONTACTS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "Xue Yang",
+    "Junchi Yan",
+    "Xiaokang Yang",
+    "Jin Tang",
+    " Wenlong Liao",
+    "Tao He",
+]
+AUTHORS_CONTACTS: Optional[List[str]] = [
+    "yangxue-2019-sjtu@sjtu.edu.cn",
+    "yanjunchi@sjtu.edu.cn",
+    "xkyang@sjtu.edu.cn",
+    "tj@ahu.edu.cn",
+    "volans.liao@cowarobot.com",
+    "tommie.he@cowarobot.com",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CN joint research group"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "resolution": ["1080x1920", "720x1280"],
+    "normal": ["normal 1", "normal 2"],
+}
 TAGS: Optional[List[str]] = None
 
 
