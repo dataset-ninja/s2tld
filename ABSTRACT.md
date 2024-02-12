@@ -10,7 +10,7 @@ Reliable traffic light detection and classification is crucial for automated dri
 
 ## Dataset description
 
-The S2TLD2 is the authors newly collected and annotated traffic light dataset, which contains 5,786 images of approximately ***1, 080 × 1, 920*** pixels (1,222 images) and ***720 × 1, 280*** pixels (4,564 images). It also contains 5 categories (namely ***red***, ***yellow***, ***green***, ***off*** and ***wait on***) of 14,130 instances. The scenes cover a variety of lighting, weather and traffic conditions, including busy street scenes inner city, dense stop-and-go traffic, strong changes in illumination/exposure, flickering/fluctuating traffic lights, multiple visible traffic lights, image parts that can be confused with traffic lights (e.g. large round tail lights).
+The S2TLD2 is the authors newly collected and annotated traffic light dataset, which contains 5,786 images of approximately ***1, 080 × 1, 920*** pixels (1,222 images) and ***720 × 1, 280*** pixels (4,564 images). It also contains 5 categories (namely *red*, *yellow*, *green*, *off* and *wait on*) of 14,130 instances. The scenes cover a variety of lighting, weather and traffic conditions, including busy street scenes inner city, dense stop-and-go traffic, strong changes in illumination/exposure, flickering/fluctuating traffic lights, multiple visible traffic lights, image parts that can be confused with traffic lights (e.g. large round tail lights).
 
 <img src="https://github.com/dataset-ninja/s2tld/assets/120389559/5a654651-dec0-44ae-a047-b8c087c40bad" alt="image" width="1000">
 
