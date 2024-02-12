@@ -1,5 +1,9 @@
 The **S2TLD: Small Traffic Light Dataset** is the authors newly collected and annotated traffic light dataset. The scenes cover a variety of lighting, weather and traffic conditions, including busy street scenes inner-city, dense stop-and-go traffic, strong changes in illumination/exposure, flickering/fluctuating traffic lights, multiple visible traffic lights, images parts that can be confused with traffic lights.
 
+Note, similar **S2TLD: Small Traffic Light Dataset** datasets are also available on the [DatasetNinja.com](https://datasetninja.com/):
+
+- [BSTLD: Bosch Small Traffic Lights Dataset](https://datasetninja.com/bstld)
+
 ## Motivation
 
 Reliable traffic light detection and classification is crucial for automated driving in urban environments. Currently, there are no systems that can reliably perceive traffic lights in real-time, without map-based information, and in sufficient distances needed for smooth urban driving.
