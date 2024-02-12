@@ -14,15 +14,16 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "S2TLD"
-PROJECT_NAME_FULL: str = "S2TLD: Small Traffic Light Dataset"
+PROJECT_NAME_FULL: str = "S<sup>2</sup>TLD: SJTU Small Traffic Light Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.MIT()
+LICENSE: License = License.MIT(
+    source_url="https://github.com/Thinklab-SJTU/S2TLD/blob/master/LICENSE"
+)
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    Industry.Utilities(),
     Industry.Automotive(),
 ]
 CATEGORY: Category = Category.EnergyAndUtilities(extra=Category.SelfDriving())
@@ -57,9 +58,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
-    "https://ieeexplore.ieee.org/abstract/document/9756223"
-)
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = "https://arxiv.org/abs/2004.13316"
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
@@ -81,8 +80,14 @@ AUTHORS_CONTACTS: Optional[List[str]] = [
     "tommie.he@cowarobot.com",
 ]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CN joint research group"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Shanghai Jiao Tong University, China",
+    "Anhui University, China",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://en.sjtu.edu.cn/",
+    "https://en.ahu.edu.cn/",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
