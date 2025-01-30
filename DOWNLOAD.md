@@ -1,6 +1,6 @@
 Dataset **S2TLD** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/3aq1lcc09iqm4ngzkx8lg/s2tld-DatasetNinja.tar?rlkey=fqeypdk3e90gcufoepngpv6m9&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzM0OTdfUzJUTEQvczJ0bGQtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiT1U5US9sbEt4dEE3bHJ0RmNCMU0zVnlYTDhVS2txRkI5MzdzeGI3ZGRhdz0ifQ==)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
